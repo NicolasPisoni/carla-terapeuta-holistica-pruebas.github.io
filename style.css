@@ -170,7 +170,7 @@ header {
 .section {
   padding: 3em 1em;
   text-align: center;
-  scroll-margin-top: 40px; /* Ajustá este valor si tu header tiene otra altura */
+  scroll-margin-top: 50px; /* Ajustá este valor si tu header tiene otra altura */
 }
 
 /* Tarjetas Terapias y Formaciones */
