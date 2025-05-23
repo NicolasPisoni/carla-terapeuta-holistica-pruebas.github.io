@@ -60,7 +60,7 @@ body {
   margin: 0;
   padding: 0;
   color: #333;
-  background: #fff;
+  background: white;
   line-height: 1.6;
   font-size: 16px;
   box-sizing: border-box;
@@ -70,7 +70,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5f5f5;
+  background: #f5f5f5;
   position: sticky;
   top: 0;
   z-index: 1000; /* Hace que quede por encima de las animaciones */
@@ -84,7 +84,6 @@ header {
 
 .nav-links {
   flex-direction: row; /* Mantiene los links en horizontal */
-  justify-content: flex-start;
   list-style: none;
   display: flex;
   gap: 1.0em; /* Aumenta este valor para más espacio */
@@ -169,7 +168,7 @@ header {
 .section {
   padding: 3em 1em;
   text-align: center;
-  scroll-margin-top: 50px; /* Ajustá este valor si tu header tiene otra altura */
+  scroll-margin-top: 30px; /* Ajustá este valor si tu header tiene otra altura */
 }
 
 /* Tarjetas Terapias y Formaciones */
@@ -185,6 +184,7 @@ header {
 }
 
 .card {
+  border-radius: 10px;
   width: 350px; /* Tamaño fijo */
   flex-grow: 1;
   max-width: 35%; /* Tamaño máximo */
@@ -192,7 +192,9 @@ header {
 }
 
 .card img {
-  width: 100%;
+  background-color: #ececec;
+  width: 95%;
+  margin: 0.5em 0;
   height: 200px;
   object-fit: cover;
 }
@@ -241,6 +243,7 @@ header {
   overflow: hidden;
   padding: 0 1em;
 }
+
 /* ANIMACIÓN AL MOSTRAR TEXTO EXTRA */
 .extra-text {
   max-height: 0;
