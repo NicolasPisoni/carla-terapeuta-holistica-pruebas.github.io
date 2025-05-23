@@ -92,6 +92,8 @@ header {
 }
 
 .nav-links a {
+  justify-content: flex-end;
+  padding-right: 10px;
   text-decoration: none;
   color: #1f618d;
   font-weight: bold;
