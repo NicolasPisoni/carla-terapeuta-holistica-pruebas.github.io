@@ -27,16 +27,8 @@ html {
   }
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-  }
-
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5em;
-  }
+.hero-content {
+  flex-direction: column;
 }
 
 .fade-in-up {
@@ -85,10 +77,18 @@ header {
   width: 100%;
 }
 
+.logo {
+  padding: 0.5em 0;
+  font-size: 1.2em;
+}
+
 .nav-links {
+  flex-direction: row; /* Mantiene los links en horizontal */
+  justify-content: flex-start;
   list-style: none;
   display: flex;
-  gap: 1em;
+  gap: 1.0em; /* Aumenta este valor para más espacio */
+  padding: 0.5em 0;
 }
 
 .nav-links a {
@@ -99,6 +99,11 @@ header {
 
 .nav-links a:hover {
   color: #66CC66;
+}
+
+.nav-links li {
+  gap: 2.0em; /* Aumenta este valor para más espacio */
+  display: inline; /* Asegura que los <li> no se apilen */
 }
 
 .hero {
@@ -137,8 +142,7 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  text-shadow: 1px 1px 5px black;
-  font-size: 2.5rem;
+  font-size: 2.0em;
   text-align: center;
   opacity: 0;
   animation: aparecer 1.5s ease-out forwards;
@@ -164,6 +168,7 @@ header {
 .section {
   padding: 3em 1em;
   text-align: center;
+  scroll-margin-top: 20px; /* Ajustá este valor si tu header tiene otra altura */
 }
 
 /* Tarjetas Terapias y Formaciones */
