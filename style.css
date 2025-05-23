@@ -177,7 +177,7 @@ header {
   line-height: 1.5;
   flex-grow: 1;
   margin: 0;
-  text-align: justify;
+  text-align: center;
 }
 
 /* Tarjetas Terapias y Formaciones */
