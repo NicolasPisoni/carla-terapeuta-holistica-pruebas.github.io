@@ -171,6 +171,15 @@ header {
   scroll-margin-top: 30px; /* Ajustá este valor si tu header tiene otra altura */
 }
 
+.section p {
+  padding: 0 1em;
+  font-size: 0.9em;
+  line-height: 1.5;
+  flex-grow: 1;
+  margin: 0;
+  text-align: justify;
+}
+
 /* Tarjetas Terapias y Formaciones */
 .cards-container {
   display: flex;
