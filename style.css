@@ -104,7 +104,6 @@ header {
 }
 
 .nav-links li {
-  gap: 2.0em; /* Aumenta este valor para más espacio */
   display: inline; /* Asegura que los <li> no se apilen */
 }
 
